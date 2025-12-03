@@ -1,0 +1,39 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+}
+
+#time {
+    font-size: 8rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#location {
+    font-size: 2rem;
+    color: #555;
+}
+
+#date {
+    font-size: 1.5rem;
+    color: #777;
+}
+
+@media (max-width: 600px) {
+    #time {
+        font-size: 4rem;
+    }
+    #location {
+        font-size: 1.5rem;
+    }
+}
