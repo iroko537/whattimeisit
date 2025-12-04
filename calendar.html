@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar - Time.is</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .calendar-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+        }
+        .calendar-day-header {
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            background-color: #eee;
+        }
+        .calendar-day {
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+        .calendar-day.today {
+            background-color: #b00;
+            color: white;
+            font-weight: bold;
+        }
+        .calendar-day.empty {
+            background-color: transparent;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header style="padding: 20px;">
+            <a href="index.html" style="font-size: 2rem; font-weight: bold; text-decoration: none; color: #333;">Time.is</a>
+        </header>
+
+        <main class="container">
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <h2 id="calendar-month-year">Month Year</h2>
+                </div>
+                <div class="calendar-grid" id="calendar-grid">
+                    <!-- Populated by JS -->
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Time.is</h4>
+                    <ul>
+                        <li><a href="index.html">Exact time now</a></li>
+                        <li><a href="compare.html">Time here&there</a></li>
+                        <li><a href="timezones.html">Time zones</a></li>
+                        <li><a href="dst.html">Daylight Saving Time</a></li>
+                        <li><a href="index.html">Clock</a></li>
+                        <li><a href="calendar.html">Calendar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Time.is clone
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Inline init for calendar
+        if (typeof initCalendarPage === 'function') {
+            initCalendarPage();
+        } else {
+             // Fallback if not yet in script.js (though I plan to put it there)
+             // I'll add it to script.js next
+        }
+    </script>
+</body>
+</html>
