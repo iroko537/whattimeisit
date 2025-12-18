@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Zones - Time.is</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .tz-time {
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header style="padding: 20px;">
+            <a href="index.html" style="font-size: 2rem; font-weight: bold; text-decoration: none; color: #333;">Time.is</a>
+        </header>
+
+        <main class="container" style="max-width: 800px; margin: 0 auto;">
+            <h1>Time Zones</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Time Zone / Region</th>
+                        <th>Current Time</th>
+                    </tr>
+                </thead>
+                <tbody id="timezone-table-body">
+                    <!-- Populated by JS -->
+                </tbody>
+            </table>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Time.is</h4>
+                    <ul>
+                        <li><a href="index.html">Exact time now</a></li>
+                        <li><a href="compare.html">Time here&there</a></li>
+                        <li><a href="timezones.html">Time zones</a></li>
+                        <li><a href="dst.html">Daylight Saving Time</a></li>
+                        <li><a href="index.html">Clock</a></li>
+                        <li><a href="calendar.html">Calendar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Time.is clone
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
